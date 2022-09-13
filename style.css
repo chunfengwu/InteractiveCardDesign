@@ -1,0 +1,389 @@
+*,
+*::after, *::before {
+    margin: 0;;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.9rem;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+    /* line-height: 1.7; */
+}
+.card-display {
+    background-image: url("images/bg-main-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 240px;
+}
+
+
+.card-front {
+    top: 20px;
+    left: 20px;
+}
+
+.card-back {
+    top: 20px;
+    left: 20px;
+}
+
+.card-front-img{
+    position: relative;
+    top: 120px;
+    left: 15px;
+    width: 285px;
+    height: 157px;
+    z-index: 1;
+}
+
+.card-logo {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    z-index: 2;
+    width: 55px;
+    height: 30px;
+}
+
+.card-number-display {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 19px;
+    left: 40px;
+    top: 200px;
+    letter-spacing: 4px;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.cardholder-display {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 19px;
+    left: 40px;
+    top: 240px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+}
+.expiry-month-display {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 19px;
+    left: 230px;
+    top: 240px;
+    font-size: 0.8rem;
+
+}
+.expiry-divider-display{
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 19px;
+    left: 245px;
+    top: 240px;
+    font-size: 0.8rem;
+}
+.expiry-year-display {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 19px;
+    left: 250px;
+    top: 240px;
+    font-size: 0.8rem;
+}
+
+.card-back-img{
+    position: relative;
+    top: -140px;
+    left: 80px;
+    width: 285px;
+    height: 157px;
+}
+
+.cvc-display {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    font-size: 19px;
+    left: 300px;
+    top: 90px;
+    font-size: 0.8rem;
+}
+
+.card-details {
+    margin-top: 10px;
+}
+
+form.form {
+    padding: 40px;
+    margin-top: 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* display: none; */
+}
+
+.form-control {
+    width: 100%;
+    max-width: 365px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.form-control input {
+    display: block;
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 35px;
+    max-width: 365px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border: 1px solid #ccc
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    display: block;
+    font-family: inherit;
+    font-weight: bold;
+    color: #21092f;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 3fr;
+    max-width: 365px;
+    width: 100%;
+    gap: 8px;
+}
+
+.form-control input:hover {
+    border: 2px solid #21092f;
+}
+
+.form-control input:focus {
+    outline: none;
+    border: 1px solid #56177b;
+}
+
+.form-control.error input{
+    border: 1px solid #dc372f;
+}
+
+.form-control.success input{
+    border: 1px solid #5617;
+}
+
+.form-control small {
+    color: rgb(226, 79, 79);
+    position: absolute;
+    padding-top: 3px;
+    font-size: 9px;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible; 
+}
+
+div.submit, div.complete button{
+    width: 100%;
+    max-width: 375px; 
+}
+
+div.submit button, div.thank-you button {
+    color: #fff;
+    background-color:  #2f0d42;
+    padding: 10px;
+    width: 100%;
+    max-width: 365px;
+    font-size: 15px;
+    font-family: inherit;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 20px
+}
+div.thank-you{
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    display: none;
+}
+
+.thank-you img{
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.thank-you h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 20px; 
+}
+
+.thank-you p {
+    font-size: 14px;
+    color: #8e8593;
+    margin-bottom: 20px; 
+    letter-spacing: 1px;
+}
+
+.footer {
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    padding-top: 70px;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        flex-direction: row;
+    }
+    .container {
+        flex-direction: row;
+    }
+    .card-details {
+        padding-top: 150px;
+        padding-left: 150px;
+        height: 100vh;
+    }
+    
+    .card-display {
+        background-image: url("images/bg-main-desktop.png");
+        width: 30%;
+        height: 100vh;
+    }
+    
+    .card-front-img{
+        top: 200px;
+        left: 30px;
+    }
+    
+    .card-logo {
+        top: 220px;
+        left: 55px;
+    }
+ 
+    .card-number-display {
+        top: 280px;
+        left: 55px;
+    }
+
+    .cardholder-display {
+        top: 320px;
+        left: 55px;
+    }
+
+    .expiry-month-display {
+        top: 320px;
+        left: 245px;
+    }
+
+    .expiry-divider-display {
+        top: 320px;
+        left: 260px;
+    }
+
+    .expiry-year-display {
+        top: 320px;
+        left: 265px;
+    }
+
+    .card-back-img{
+        top: 220px;
+        left: 70px;
+    }
+    .cvc-display {
+        left: 290px;
+        top: 450px;
+    }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .card-details {
+        padding-top: 200px;
+        padding-left: 250px;
+        height: 100vh;
+    }
+    .card-front-img{
+        top: 270px;
+        left: 150px;
+    }
+    
+    .card-logo {
+        top: 290px;
+        left: 175px;
+    }
+ 
+    .card-number-display {
+        top: 350px;
+        left: 175px;
+    }
+
+    .cardholder-display {
+        top: 390px;
+        left: 175px;
+    }
+
+    .expiry-month-display {
+        top: 390px;
+        left: 365px;
+    }
+
+    .expiry-divider-display {
+        top: 390px;
+        left: 380px;
+    }
+
+    .expiry-year-display {
+        top: 390px;
+        left: 385px;
+    }
+
+    .card-back-img{
+        top: 300px;
+        left: 200px;
+    }
+    .cvc-display {
+        top: 530px;
+        left: 420px;
+    }
+}
+
+
+
+
+
+
+
+
